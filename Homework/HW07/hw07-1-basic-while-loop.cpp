@@ -30,3 +30,29 @@
         [7] Hello World
 
 */
+
+#include <stdio.h> //The program calculates that If the user enters an odd number Display line numbers using [].
+    //If the user enters an even number Display line numbers by using ().
+
+int main() {
+    int num ;
+    
+    printf( "Enter number:\n") ;
+    scanf( "%d", &num) ;
+
+    int i = 0;
+        if (num % 2 == 0) {
+    		while (i <= num) {
+            	printf( "(%d) Hello World\n", i) ;
+            	i++ ;
+    		}//end while
+        } else {
+    		while (i <= num) {
+            	printf( "[%d] Hello World\n", i) ;
+            	i++ ;
+    		}//end while
+        }//end else
+        
+
+    return 0 ;
+}//end main fuction
